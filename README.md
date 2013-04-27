@@ -1,4 +1,6 @@
 guuurrrrllllldevelopment
 ========================
 
-Heeeeeyyyyy guuuuurrrrlllllll! 
+Heeeeeyyyyy guuuuurrrrlllllll!
+
+A birthday website for one of my favorite girl developers.
