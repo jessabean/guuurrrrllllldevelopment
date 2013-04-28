@@ -59,6 +59,22 @@ a img {
   margin: 0 auto;
   width: 800px; }
 
+/* line 6, ../sass/base/_structure.scss */
+#main {
+  text-align: center; }
+
+/* line 10, ../sass/base/_structure.scss */
+.birthday {
+  margin-bottom: 40px;
+  position: relative; }
+
+/* line 15, ../sass/base/_structure.scss */
+.video-snuggle {
+  display: inline-block;
+  background-color: #58b04c;
+  margin-bottom: 10px;
+  padding: 10px; }
+
 /* line 5, ../sass/base/_base.scss */
 * {
   -webkit-text-size-adjust: none;

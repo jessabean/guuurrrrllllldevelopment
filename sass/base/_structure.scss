@@ -2,3 +2,19 @@
   margin: 0 auto;
   width: 800px;
 }
+
+#main {
+  text-align: center;
+}
+
+.birthday {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.video-snuggle {
+  display: inline-block;
+  background-color: $green;
+  margin-bottom: 10px;
+  padding: 10px;
+}
