@@ -34,81 +34,90 @@ body {
   padding: 40px 0;
 }
 
+// Videos
+
+.birthday {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.video-snuggle {
+  display: inline-block;
+  background-color: $green;
+  margin-bottom: 10px;
+  position:relative;
+  padding: 10px;
+  z-index: 2;
+}
+
 // ======================
 // Blinky images
 // ======================
 
-// img {
-// // border:1px solid #000;
-// // -moz-transition:all 1s ease-in-out;
-// // -webkit-transition:all 1s ease-in-out;
-// // -o-transition:all 1s ease-in-out;
-// // -ms-transition:all 1s ease-in-out;
-// // transition:all 1s ease-in-out;
+$stars:
+  star-1 1s 0.5s,
+  star-2 1.5s 1s,
+  star-3 2s 1.5s,
+  star-1-alt 1s 0.5s,
+  star-2-alt 1.5s 1s,
+  star-3-alt 2s 1.5s;
 
-// -moz-animation:blink normal 2s infinite ease-in-out;
-// -webkit-animation:blink normal 2s infinite ease-in-out;
-// animation:blink normal 2s infinite ease-in-out;
-// }​
+@each $star in $stars {
+  .#{nth($star, 1)} {
+  background: url(../img/#{nth($star, 1)}-spread.png) 0 0 no-repeat;
+  display: block;
+  position: absolute;
+
+  -moz-animation: blink #{nth($star, 2)} ease-in-out infinite;
+  -webkit-animation: blink #{nth($star, 2)} ease-in-out infinite;
+  animation: blink #{nth($star, 2)} ease-in-out infinite;
+
+  -moz-transition-delay: #{nth($star, 3)};
+  -webkit-transition-delay: #{nth($star, 3)};
+  transition-delay: #{nth($star, 3)};
+  }
+}
 
 .star-1 {
-  background: url(../img/star-1-spread.png) 0 0 no-repeat;
-  display: block;
   height: 182px;
   width: 232px;
-  position: absolute;
-    top: 18px;
-    left: -10px;
-
-  -moz-animation: blink 1s ease-in-out infinite;
-  -webkit-animation: blink 1s ease-in-out infinite;
-  animation: blink 1s ease-in-out infinite;
-
-  -moz-transition-delay: 0.5s;
-  -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s;
+  top: -40px;
+  left: 10px;
 }
 
 .star-2 {
-  background: url(../img/star-2-spread.png) 0 0 no-repeat;
-  display: block;
   height: 169px;
   width: 277px;
-  position: absolute;
-    top: 35px;
-    left: 20px;
-
-  -moz-animation: blink 1.5s ease-in-out infinite;
-  -webkit-animation: blink 1.5s ease-in-out infinite;
-  animation: blink 1.5s ease-in-out infinite;
-
-  -moz-transition-delay: 1s;
-  -webkit-transition-delay: 1s;
-  transition-delay: 1s;
+  top: 35px;
+  left: 0;
 }
 
 .star-3 {
-  background: url(../img/star-3-spread.png) 0 0 no-repeat;
-  display: block;
-  height: 212px;
-  width: 249px;
-  position: absolute;
-    top: 10px;
-    left: 20px;
-
-  -moz-animation: blink 2s ease-in-out infinite;
-  -webkit-animation: blink 2s ease-in-out infinite;
-  animation: blink 2s ease-in-out infinite;
-
-  -moz-transition-delay: 1.5s;
-  -webkit-transition-delay: 1.5s;
-  transition-delay: 1.5s;
+  height: 250px;
+  width: 241px;
+  top: 10px;
+  left: -40px;
 }
 
-.big-star {
-  background-size: 45px 45px;
-  height: 45px;
-  width: 45px;
+.star-1-alt {
+  height: 182px;
+  width: 232px;
+  top: 0;
+  right: -40px;
+}
+
+.star-2-alt {
+  height: 277px;
+  width: 277px;
+  top: 0;
+  right: 0;
+}
+
+.star-3-alt {
+  height: 317px;
+  width: 158px;
+  right: 0;
+  top: 0;
 }
 
 @-moz-keyframes blink {
