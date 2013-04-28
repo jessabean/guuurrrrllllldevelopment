@@ -51,7 +51,7 @@ body {
 }
 
 // ======================
-// Blinky images
+// Blinky Stars
 // ======================
 
 $stars:
@@ -137,3 +137,30 @@ $stars:
   50%   { opacity: 0; }
   100%  { opacity: 1; }
 } /* Opera and prob css3 final iteration */
+
+// ======================
+// Rainbows
+// ======================
+
+.rainbow,
+.rainbow-alt {
+  display: block;
+  position: absolute;
+}
+
+.rainbow {
+  background: url(../img/rainbow.png) 0 0 no-repeat;
+  height: 176px;
+  width: 257px;
+  top: 40px;
+  right: -50px;
+}
+
+.rainbow-alt {
+  background: url(../img/rainbow-alt.png) 0 0 no-repeat;
+  height: 109px;
+  width: 162px;
+  top: 40px;
+  left: -100px;
+  z-index: 3;
+}

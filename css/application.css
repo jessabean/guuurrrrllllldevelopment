@@ -260,6 +260,29 @@ body {
     opacity: 1; } }
 
 /* Opera and prob css3 final iteration */
+/* line 146, ../sass/base/_base.scss */
+.rainbow,
+.rainbow-alt {
+  display: block;
+  position: absolute; }
+
+/* line 151, ../sass/base/_base.scss */
+.rainbow {
+  background: url(../img/rainbow.png) 0 0 no-repeat;
+  height: 176px;
+  width: 257px;
+  top: 40px;
+  right: -50px; }
+
+/* line 159, ../sass/base/_base.scss */
+.rainbow-alt {
+  background: url(../img/rainbow-alt.png) 0 0 no-repeat;
+  height: 109px;
+  width: 162px;
+  top: 40px;
+  left: -100px;
+  z-index: 3; }
+
 /* line 5, ../sass/base/_type.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Bowlby One", cursive; }
