@@ -94,23 +94,47 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 50px;
   font-size: 5rem;
+  color: #fff;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.1);
-  background: linear-gradient(left, rgba(105, 94, 127, 0.54) 0%, rgba(255, 92, 92, 0.57) 15%, rgba(255, 160, 17, 0.59) 27%, rgba(252, 236, 93, 0.61) 37%, rgba(255, 229, 145, 0.63) 46%, rgba(111, 196, 173, 0.65) 58%, rgba(106, 132, 186, 0.67) 69%, rgba(209, 119, 195, 0.69) 79%, rgba(216, 213, 125, 0.7) 89%, rgba(216, 213, 125, 0.72) 100%), repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.5), transparent 20px, rgba(255, 255, 255, 0.3) 40px);
-  background-size: 300% 100%;
-  background-position: center left, top left;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: animate-stripes 1s linear infinite;
+  -moz-animation: animate-stripes 1s linear infinite;
+  animation: animate-stripes 1s linear infinite;
+  background-color: #03b0fe;
+  background-image: -webkit-linear-gradient(45deg, #03b0fe 25%, #61cdf4 25%, #61cdf4 50%, #03b0fe 50%, #03b0fe 75%, #61cdf4 75%, #61cdf4);
+  background-image: -moz-linear-gradient(45deg, #03b0fe 25%, #61cdf4 25%, #61cdf4 50%, #03b0fe 50%, #03b0fe 75%, #61cdf4 75%, #61cdf4);
+  background-image: -o-linear-gradient(45deg, #03b0fe 25%, #61cdf4 25%, #61cdf4 50%, #03b0fe 50%, #03b0fe 75%, #61cdf4 75%, #61cdf4);
+  background-image: linear-gradient(45deg, #03b0fe 25%, #61cdf4 25%, #61cdf4 50%, #03b0fe 50%, #03b0fe 75%, #61cdf4 75%, #61cdf4);
+  background-size: 25px 25px;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
-  transition: all 1.8s linear; }
+  background-clip: text; }
 
-/* line 82, ../sass/base/_type.scss */
+@-webkit-keyframes animate-stripes {
+  /* line 35, ../sass/base/_type.scss */
+  0% {
+    background-position: 0 0; }
+
+  /* line 36, ../sass/base/_type.scss */
+  100% {
+    background-position: 25px 0; } }
+
+@-moz-keyframes animate-stripes {
+  /* line 39, ../sass/base/_type.scss */
+  0% {
+    background-position: 0 0; }
+
+  /* line 40, ../sass/base/_type.scss */
+  100% {
+    background-position: 25px 0; } }
+
+/* line 79, ../sass/base/_type.scss */
 em {
   font-style: italic; }
 
-/* line 87, ../sass/base/_type.scss */
+/* line 84, ../sass/base/_type.scss */
 strong,
 b {
   font-weight: bold; }
