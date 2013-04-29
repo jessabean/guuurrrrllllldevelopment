@@ -50,6 +50,11 @@ body {
   z-index: 2;
 }
 
+#page_footer {
+  background: $blue-light;
+  min-height: 200px;
+}
+
 // ======================
 // Blinky Stars
 // ======================
@@ -163,4 +168,41 @@ $stars:
   top: 40px;
   left: -100px;
   z-index: 3;
+}
+
+// ======================
+// Hearts
+// ======================
+
+.heart-small,
+.heart-mid,
+.heart-big {
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: animate-stripes 1s linear infinite;
+  -moz-animation: animate-stripes 1s linear infinite;
+  animation: animate-stripes 1s linear infinite;
+
+  background-color: $blue;
+  // background-image: -webkit-linear-gradient(45deg, $purple 25%, $blue-mid 25%, $blue-mid 50%, $green 50%, $green 75%, $yellow 75%, $yellow);
+  // background-image: -moz-linear-gradient(45deg, $blue 25%, $blue-mid 25%, $blue-mid 50%, $blue 50%, $blue 75%, $blue-mid 75%, $blue-mid);
+  // background-image: -o-linear-gradient(45deg, $blue 25%, $blue-mid 25%, $blue-mid 50%, $blue 50%, $blue 75%, $blue-mid 75%, $blue-mid);
+  // background-image: linear-gradient(45deg, $blue 25%, $blue-mid 25%, $blue-mid 50%, $blue 50%, $blue 75%, $blue-mid 75%, $blue-mid);
+  // background-size: 25px 25px;
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.heart-small {
+  @include font-size(3.2);
+}
+
+.heart-mid {
+  @include font-size(5.0);
+}
+
+.heart-big {
+  @include font-size(10.0);
 }
