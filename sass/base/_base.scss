@@ -28,6 +28,15 @@ html {
 
 body {
   background: $purple-light;
+  -webkit-animation: pulse 40s infinite alternate;
+}
+
+@-webkit-keyframes pulse {
+  0%    { background-color: $purple-light; }
+  25%   { background-color: $blue-light; }
+  50%   { background-color: $green-light; }
+  75%   { background-color: $orange-light; }
+  100%  { background-color: $pink-light; }
 }
 
 #page_header {
