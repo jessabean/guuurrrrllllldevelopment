@@ -137,7 +137,7 @@ body {
 
 /* line 84, ../sass/base/_base.scss */
 .star-1 {
-  background: url(/img/star-1-spread.png) 0 0 no-repeat;
+  background: url(../img/star-1-spread.png) 0 0 no-repeat;
   display: block;
   position: absolute;
   -moz-animation: blink 1s ease-in-out infinite;
@@ -149,7 +149,7 @@ body {
 
 /* line 84, ../sass/base/_base.scss */
 .star-2 {
-  background: url(/img/star-2-spread.png) 0 0 no-repeat;
+  background: url(../img/star-2-spread.png) 0 0 no-repeat;
   display: block;
   position: absolute;
   -moz-animation: blink 1.5s ease-in-out infinite;
@@ -161,7 +161,7 @@ body {
 
 /* line 84, ../sass/base/_base.scss */
 .star-3 {
-  background: url(/img/star-3-spread.png) 0 0 no-repeat;
+  background: url(../img/star-3-spread.png) 0 0 no-repeat;
   display: block;
   position: absolute;
   -moz-animation: blink 2s ease-in-out infinite;
@@ -173,7 +173,7 @@ body {
 
 /* line 84, ../sass/base/_base.scss */
 .star-1-alt {
-  background: url(/img/star-1-alt-spread.png) 0 0 no-repeat;
+  background: url(../img/star-1-alt-spread.png) 0 0 no-repeat;
   display: block;
   position: absolute;
   -moz-animation: blink 1s ease-in-out infinite;
@@ -185,7 +185,7 @@ body {
 
 /* line 84, ../sass/base/_base.scss */
 .star-2-alt {
-  background: url(/img/star-2-alt-spread.png) 0 0 no-repeat;
+  background: url(../img/star-2-alt-spread.png) 0 0 no-repeat;
   display: block;
   position: absolute;
   -moz-animation: blink 1.5s ease-in-out infinite;
@@ -197,7 +197,7 @@ body {
 
 /* line 84, ../sass/base/_base.scss */
 .star-3-alt {
-  background: url(/img/star-3-alt-spread.png) 0 0 no-repeat;
+  background: url(../img/star-3-alt-spread.png) 0 0 no-repeat;
   display: block;
   position: absolute;
   -moz-animation: blink 2s ease-in-out infinite;

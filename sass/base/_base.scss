@@ -82,7 +82,7 @@ $stars:
 
 @each $star in $stars {
   .#{nth($star, 1)} {
-  background: url(/img/#{nth($star, 1)}-spread.png) 0 0 no-repeat;
+  background: url(../img/#{nth($star, 1)}-spread.png) 0 0 no-repeat;
   display: block;
   position: absolute;
 
