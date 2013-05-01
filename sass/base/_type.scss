@@ -62,10 +62,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-dl {
-  margin-bottom: 20px;
-}
-
 dt {
   color: $yellow;
   font-weight: bold;
@@ -74,6 +70,7 @@ dt {
 dd {
   color: $purple-light;
   font-style: italic;
+  margin-bottom: 20px;
 }
 
 // ======================
